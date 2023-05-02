@@ -10,13 +10,14 @@ local UIGradient = Instance.new("UIGradient")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local InfYield = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
+local R2O = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
 local Decoration = Instance.new("Frame")
 local UIGradient_2 = Instance.new("UIGradient")
 
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ResetOnSpawn = false
 
 Main.Name = "Main"
 Main.Parent = ScreenGui
@@ -87,6 +88,23 @@ InfYield.MouseButton1Down:connect(function()
 end)
 UICorner_2.Parent = InfYield
 
+R2O.Name = "R2O"
+R2O.Parent = ScrollingFrame
+R2O.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+R2O.BorderSizePixel = 0
+R2O.Position = UDim2.new(0.0160000008, 0, 0.0721237063, 0)
+R2O.Size = UDim2.new(0, 179, 0, 38)
+R2O.Font = Enum.Font.Cartoon
+R2O.Text = "R2O"
+R2O.TextColor3 = Color3.fromRGB(255, 255, 255)
+R2O.TextScaled = true
+R2O.TextSize = 14.000
+R2O.TextWrapped = true
+R2O.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/cheesynob39/R2O/main/LOADSTRING.lua"))() 
+end)
+UICorner_3.Parent = R2O
+
 Decoration.Name = "Decoration"
 Decoration.Parent = Main
 Decoration.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
@@ -102,7 +120,7 @@ UIGradient_2.Parent = Decoration
 
 -- Scripts:
 
-local function HETC_fake_script() -- Main.Dragify 
+local function LQNQZ_fake_script() -- Main.Dragify 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService("UserInputService")
@@ -143,4 +161,4 @@ local function HETC_fake_script() -- Main.Dragify
 	dragify(script.Parent)
 	
 end
-coroutine.wrap(HETC_fake_script)()
+coroutine.wrap(LQNQZ_fake_script)()
