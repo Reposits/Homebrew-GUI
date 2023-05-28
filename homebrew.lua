@@ -28,6 +28,7 @@ Main.Position = UDim2.new(0.418194652, 0, 0.325443774, 0)
 Main.Size = UDim2.new(0, 309, 0, 194)
 Main.ZIndex = 5
 Main.Active = true
+ScreenGui.ResetOnSpawn = false
 
 Decoration2.Name = "Decoration2"
 Decoration2.Parent = Main
